@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from "./section/header.js";
+import Card from "./Card/card";
 
 function App() {
   const [width, setWindowWidth] = useState(0);
@@ -23,10 +24,14 @@ function App() {
   return (
     <>
       <Header showTopNavMenu={responsive.showTopNavMenu}/>
+
       <div className="heading-text">
         <h1>Old Car Available</h1>
       </div>
+
       <hr className="heading-seprator"/>
+
+      <Card />
 
     </>
   )
