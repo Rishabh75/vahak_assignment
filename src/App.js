@@ -1,22 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-
-function Header(props){
-  const showNav= {
-    display: props.showTopNavMenu ? 'flex' : 'none'
-  }
-  const showMenuIcon = {
-    display: props.showTopNavMenu ? 'none' : 'flex',
-  }
-  return (
-     <>
-       <div id="nav_container" style={showNav}>
-         <nav id="navigation">{navMenuItems}</nav>
-       </div>
-       <span className="menu-icon" style={showMenuIcon}/>
-     </>
-  )
-}
+import Header from "./section/header.js";
 
 function App() {
   const [width, setWindowWidth] = useState(0);
@@ -29,7 +13,7 @@ function App() {
    }, [])
 
   const updateDimensions = () => {
-    const width = window.innerWidth
+    const width = window.innerWidth;
     setWindowWidth(width)
   }
 
@@ -39,15 +23,13 @@ function App() {
   return (
     <>
       <Header showTopNavMenu={responsive.showTopNavMenu}/>
-      {/* <Main /> */}
+      <div className="heading-text">
+        <h1>Old Car Available</h1>
+      </div>
+      <hr className="heading-seprator"/>
+
     </>
   )
-  
-  // return (
-  //   <div className="App">
-      
-  //   </div>
-  // );
 }
 
 export default App;
