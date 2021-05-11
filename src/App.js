@@ -1,25 +1,53 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
-function App() {
+function Header(props){
+  const showNav= {
+    display: props.showTopNavMenu ? 'flex' : 'none'
+  }
+  const showMenuIcon = {
+    display: props.showTopNavMenu ? 'none' : 'flex',
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+     <>
+       <div id="nav_container" style={showNav}>
+         <nav id="navigation">{navMenuItems}</nav>
+       </div>
+       <span className="menu-icon" style={showMenuIcon}/>
+     </>
+  )
+}
+
+function App() {
+  const [width, setWindowWidth] = useState(0);
+
+  useEffect(() => { 
+    updateDimensions();
+    window.addEventListener("resize", updateDimensions);
+    return () => 
+      window.removeEventListener("resize",updateDimensions);
+   }, [])
+
+  const updateDimensions = () => {
+    const width = window.innerWidth
+    setWindowWidth(width)
+  }
+
+  const responsive = {
+    showTopNavMenu: width > 1023
+  }
+  return (
+    <>
+      <Header showTopNavMenu={responsive.showTopNavMenu}/>
+      {/* <Main /> */}
+    </>
+  )
+  
+  // return (
+  //   <div className="App">
+      
+  //   </div>
+  // );
 }
 
 export default App;
