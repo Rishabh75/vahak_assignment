@@ -7,15 +7,15 @@ function Form () {
     const [bidAmount, setBidAmount] = useState(0);
     const [negotiable, setNegotiable] = useState(null);
     const [mobile, setMobile] = useState('+91-');
-    const [name, setName] = useState(null);
-    const [remarks, setRemarks] = useState(null);
+    const [name, setName] = useState('');
+    const [remarks, setRemarks] = useState('');
 
     const [showFormFields, setShowFormFields] = useState(false);
     const [disableBidBtn, setDisableBidBtn] = useState(true);
 
     const disableBtn = {
         backgroundColor: '#EDF0F7',
-        opacity: '100%',
+        opacity: '1',
         boxShadow: '0px 0px 0px'
     }
 
@@ -25,7 +25,7 @@ function Form () {
     }
 
     useEffect(()=>{
-        if((mobile != '+91-') && (mobile.length == 14) && name){
+        if((mobile != '+91-') && (mobile.length == 14) && name != ''){
             setDisableBidBtn(false);
         }else{
             setDisableBidBtn(true);

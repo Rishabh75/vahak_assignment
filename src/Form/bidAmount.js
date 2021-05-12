@@ -54,7 +54,7 @@ function BidAmount (props) {
     const activebtnstyle = {
         border: '1px solid #3054D6',
         color: '#3054D6',
-        opacity: '100%'
+        opacity: '1'
     }
 
     useEffect(()=>{
