@@ -22,7 +22,7 @@ function BidderDetails (props) {
 
     const validateName = (value) => {
         if(value == ""){
-            props.setName(null);
+            props.setName('');
         }else{
             props.setName(value)
         } 
