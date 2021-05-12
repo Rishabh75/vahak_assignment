@@ -13,10 +13,6 @@ function Header(props){
     }
     return (
        <>
-         <div id="nav_container" style={showNav}>
-             hello
-           {/* <nav id="navigation">{navMenuItems}</nav> */}
-         </div>
 
          <div id="mobile_nav_container" style={showMenuIcon}>
             <span>

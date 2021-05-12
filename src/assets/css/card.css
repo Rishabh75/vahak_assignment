@@ -1,0 +1,147 @@
+.card-container{
+    width : 85vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    border: 1px solid #0A22391F;
+    border-radius: 6px;
+    box-shadow: 0px 0px 30px #90909066;
+}
+
+/* Styling for Card Header */
+.card-header{
+    width : 85vw;
+    height : 60px;
+    background-color: #202942;
+    border-radius: 6px 6px 0px 0px;
+    opacity: 100;
+    padding: 18px 0px;
+}
+
+.car-name-text {
+    display: block;
+    color: #FFFFFF;
+    opacity: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    height: 22px;
+    font-weight: 500;
+    text-align: center;
+    margin: 10px;
+}
+
+.posted-date-text {
+    display: block;
+    color: #8492A6;
+    opacity: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    height: 18px;
+    font-weight: 500;
+    text-align: center;
+    margin: 10px;
+}
+
+/* Styling for Specification section */
+.specification-conatainer{
+    width : 85vw;
+    height:fit-content;
+    padding: 10px 10px 5px 0px;
+}
+
+.specification{
+    display: grid;
+    grid: 'icon text text text' ;
+    grid-gap: 10px;
+    align-items: center;
+    margin: 10px;
+}
+
+.specification-text{
+    grid-area: text;
+    color: #0A2239;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    height: 20px;
+    font-weight: 700;
+    text-align: left;
+    opacity: 100%;
+}
+
+.specification-icon{
+    grid-area: icon;
+    text-align: center;
+    width:18px;
+    height: 18px;
+    margin: 2px auto 0px auto;
+}
+
+.a{
+    fill: #63798e!important;
+}
+
+/* Styling for detail section */
+.details-section{
+    padding: 15px;
+    color: #0A2239;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: left;
+    opacity: 100%;
+}
+
+.show-hide-details-btn{
+    background-color: #2355FC0F;
+    width: 85vw;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.card-btn-text{
+    color: #194DFF;
+    margin-right: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 90%;
+}
+
+/* Styling for Owner Info Section */
+.info-container{
+    padding: 10px;
+    display: grid;
+    grid: 'profile name name name name'
+    'profile location location location location' ;
+    grid-template-rows: 20px 18px;
+    grid-gap: 10px;
+    grid-row-gap: 5px;
+    align-items: center;
+}
+
+.info-profile-picture{
+    grid-area: profile;
+    width: 40px;
+    height: 40px;
+}
+
+.owner-name{
+    grid-area: name;
+    color: #0A2239;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.owner-location{
+    grid-area: location;
+    color: #8492A6;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
