@@ -76,7 +76,7 @@
     font-weight: 600;
     font-family: 'Nunito', sans-serif;
     letter-spacing: 0.36px;
-    opacity: 60%;
+    opacity: 0.6;
 }
 
 /* Styling of Form seprator line */
@@ -109,7 +109,7 @@
 
 .field-input::placeholder{
     color: #0D0D0F;
-    opacity: 50%;
+    opacity: 0.5;
 }
 
 .field-input:focus{
