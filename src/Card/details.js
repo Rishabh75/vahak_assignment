@@ -17,8 +17,8 @@ function Details () {
             </div>
 
             <div className="show-hide-details-btn">
-                <span onClick={()=>setShowDetails(!showDetails)} className="btn-text">
-                    <label className="btn-text">{showDetails? "Hide" : "More"} Details</label>
+                <span onClick={()=>setShowDetails(!showDetails)} >
+                    <label className="card-btn-text">{showDetails? "Hide" : "More"} Details</label>
                     { showDetails ? (
                         <Hide className="show-hide-icon" />
                     ) : (

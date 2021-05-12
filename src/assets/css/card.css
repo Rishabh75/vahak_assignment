@@ -74,6 +74,7 @@
     text-align: center;
     width:18px;
     height: 18px;
+    margin: 2px auto 0px auto;
 }
 
 .a{
@@ -100,7 +101,7 @@
     text-align: center;
 }
 
-.btn-text{
+.card-btn-text{
     color: #194DFF;
     margin-right: 8px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
