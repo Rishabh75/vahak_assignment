@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from "./section/header.js";
+import Form from './Form/form';
 
 function App() {
   const [width, setWindowWidth] = useState(0);
@@ -27,7 +28,7 @@ function App() {
         <h1>Old Car Available</h1>
       </div>
       <hr className="heading-seprator"/>
-
+      <Form />
     </>
   )
 }
