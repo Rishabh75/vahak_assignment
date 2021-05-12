@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from "./section/header.js";
+<<<<<<< HEAD
 import Card from "./Card/card";
+=======
+import Form from './Form/form';
+>>>>>>> form
 
 function App() {
   const [width, setWindowWidth] = useState(0);
@@ -33,6 +37,7 @@ function App() {
 
       <Card />
 
+      <Form />
     </>
   )
 }
