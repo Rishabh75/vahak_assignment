@@ -21,7 +21,7 @@ function Form () {
 
     const disableBtnTxt = {
         color: '#2355FC',
-        opacity: '50%'
+        opacity: '0.5'
     }
 
     useEffect(()=>{
